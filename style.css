@@ -1,0 +1,587 @@
+/* --- Color Variables (Optional but Recommended) --- */
+:root {
+    --primary-green: #389582; /* Main accent color */
+    --primary-red: #C55353; /* Pledge/CTA accent color */
+    --text-dark: #333;
+    --text-light: #fff;
+    --secondary-gray: #f4f4f4;
+}
+
+/* --- General Typography & Layout Improvements --- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-dark);
+    margin: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background: var(--text-light); /* White background */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--primary-green);
+    font-weight: 800;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+.logo svg {
+    fill: var(--primary-green);
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+.desktop-nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 600;
+    padding: 0 15px;
+    transition: color 0.3s;
+}
+
+.desktop-nav a:hover {
+    color: var(--primary-green);
+}
+
+.donate-btn {
+    background-color: var(--primary-green); /* Main donate button color */
+    color: var(--text-light);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.donate-btn:hover {
+    background-color: #2a7366; /* Darker green on hover */
+}
+
+/* Hide mobile menu toggle on desktop */
+.menu-toggle-btn {
+    display: none;
+}
+
+/* --- Hero Section & Banner --- */
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: var(--text-light);
+    height: 60vh; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* Semi-transparent dark overlay to make text pop */
+    background: rgba(0, 0, 0, 0.4); 
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    font-weight: 300; /* Use the 'heading-extra-light' class styling */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* The vertical social media strip on the right */
+.social-strip {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px 0 0 5px;
+    z-index: 3;
+}
+
+.social-strip a {
+    padding: 5px;
+}
+
+.social-strip svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-green);
+}
+
+/* --- Mission and Pledge Section --- */
+.mission-pledge-wrap {
+    background-color: var(--secondary-gray);
+    padding: 50px 0;
+}
+
+.mission-pledge-container {
+    display: flex;
+    max-width: 1000px;
+    margin: -100px auto 0; /* Pull mission up over the hero section */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 5;
+    position: relative;
+}
+
+.mission-box, .pledge-box {
+    padding: 40px;
+}
+
+.mission-box {
+    flex: 2;
+    background-color: var(--text-light); /* White background for mission */
+    text-align: center;
+}
+
+.pledge-box {
+    flex: 1;
+    background-color: var(--primary-red); /* Red background for pledge */
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mission-box h2, .pledge-box h2 {
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.read-more {
+    color: var(--text-dark);
+    text-decoration: underline;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.support-btn {
+    background-color: var(--text-light);
+    color: var(--primary-red);
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.support-btn:hover {
+    background-color: #e6e6e6;
+}
+
+/* --- News and Subscribe Section (The green band) --- */
+.news-subscribe-wrap {
+    display: flex;
+    color: var(--text-light);
+}
+
+.news-box {
+    flex: 1;
+    background-color: var(--primary-green); /* Green background for news */
+    padding: 40px;
+}
+
+.subscribe-box {
+    flex: 1;
+    background-color: #2a7366; /* Slightly darker green for subscribe */
+    padding: 40px;
+}
+
+.news-box h2, .subscribe-box h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.news-box .read-more.white {
+    color: var(--text-light);
+    border: 1px solid var(--text-light);
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.subscribe-box form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.subscribe-box input[type="email"] {
+    padding: 10px;
+    border: none;
+    flex-grow: 1;
+}
+
+.join-btn {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* --- Events Section --- */
+.events-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.events-section h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.event-card {
+    background: var(--text-light);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.event-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.event-content {
+    padding: 15px;
+}
+
+.event-content h3 {
+    margin: 10px 0 5px;
+    font-weight: 700;
+}
+
+.event-date {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.register-btn {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #2a7366;
+}
+
+/* --- Call to Action Banner (DONATE NOW!) --- */
+.cta-banner {
+    background-color: var(--primary-red); /* Red background for the banner */
+    color: var(--text-light);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cta-content h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.donate-now-btn {
+    background-color: var(--text-light);
+    color: var(--primary-red);
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.donate-now-btn:hover {
+    background-color: #e6e6e6;
+}
+
+/* --- Latest News Placeholder (below CTA) --- */
+.latest-news-placeholder {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.latest-news-placeholder h2 {
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333; /* Dark gray/black background for footer */
+    color: var(--text-light);
+    padding-top: 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.footer-column h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.footer-column address, .footer-column p {
+    font-style: normal;
+    font-size: 0.9em;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: var(--text-light);
+    transition: color 0.3s;
+}
+
+.social-icons svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-light);
+}
+
+.footer-subscribe-form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.footer-subscribe-form input {
+    padding: 10px;
+    border: none;
+    flex-grow: 1;
+    background: #444;
+    color: var(--text-light);
+}
+
+.footer-subscribe-form button {
+    background-color: var(--primary-green);
+    color: var(--text-light);
+    border: none;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.footer-subscribe-form button svg {
+    width: 15px;
+    height: 15px;
+    stroke: var(--text-light);
+}
+
+.footer-bottom {
+    background-color: var(--primary-green); /* Green strip at the very bottom */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* --- Chat Button --- */
+.chat-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-green); /* Green background */
+    color: var(--text-light);
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+
+.chat-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--text-light);
+}
+
+.chat-btn:hover {
+    background-color: #2a7366;
+}
+
+/* --- Mobile styles (Minimal for illustration) --- */
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .menu-toggle-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--primary-green);
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+    
+    .mission-pledge-container {
+        flex-direction: column;
+        margin: -50px auto 0;
+    }
+
+    .news-subscribe-wrap {
+        flex-direction: column;
+    }
+    
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-content {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+}
+
+/* Mobile Menu Overlay Styles */
+#mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-green);
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#mobile-menu-overlay.open {
+    transform: translateX(0);
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.mobile-nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 15px 0;
+    font-weight: 600;
+}
+
+.close-btn {
+    align-self: flex-end;
+    font-size: 3em;
+    color: var(--text-light);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-donate-btn {
+    background-color: var(--primary-red);
+    padding: 15px 30px !important;
+    margin-top: 30px;
+    border-radius: 5px;
+    font-weight: 700 !important;
+}

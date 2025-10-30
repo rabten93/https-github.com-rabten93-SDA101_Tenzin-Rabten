@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>END HUNGER! Charity Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="mobile-menu-overlay">
+        <button class="close-btn">&times;</button>
+        <nav class="mobile-nav">
+            <a href="#">Home</a>
+            <a href="#">Who We Are</a>
+            <a href="#">Support Us</a>
+            <a href="#">Events</a>
+            <a href="#">News</a>
+            <a href="#">Contact</a>
+            <a href="#" class="mobile-donate-btn">DONATE</a>
+        </nav>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <svg viewBox="0 0 24 24"><path d="M12 2L4 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-8-3z"/></svg>
+                <span>END HUNGER</span>
+            </div>
+            <nav class="desktop-nav">
+                <a href="#">Home</a>
+                <a href="#">Who We Are</a>
+                <a href="#">Support Us</a>
+                <a href="#">Events</a>
+                <a href="#">News</a>
+                <a href="#">Contact</a>
+            </nav>
+            <button class="donate-btn desktop-only">DONATE</button>
+            <button class="menu-toggle-btn" aria-label="Toggle Menu">&#9776;</button>
+        </div>
+    </header>
+
+    <section class="hero" style="background-image: url('/Budget-Poverty.webp');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="heading-extra-light">END HUNGER!</h1>
+            <p>Millions of families in America go hungry every year.Help us provide them with enough to eat.</p>
+        </div>
+        <div class="social-strip desktop-only">
+            <a href="#"><svg viewBox="0 0 24 24"><path d="M19.7 4H4.3C3.6 4 3 4.6 3 5.3v13.4C3 19.4 3.6 20 4.3 20h15.4c.7 0 1.3-.6 1.3-1.3V5.3c0-.7-.6-1.3-1.3-1.3z"/></svg></a>
+            <a href="#"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C17.65 2 20 4.35 20 7.8v8.4c0 3.45-2.35 5.8-5.8 5.8H7.8C4.35 22 2 19.65 2 16.2V7.8C2 4.35 4.35 2 7.8 2zm-.2 3.6c-.7 0-1.2.5-1.2 1.2s.5 1.2 1.2 1.2 1.2-.5 1.2-1.2-.5-1.2-1.2-1.2zm8.8 9.4c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5z"/></svg></a>
+            <a href="#"><svg viewBox="0 0 24 24"><path d="M22.46 6.17c-.77.34-1.6.57-2.48.67.88-.53 1.56-1.37 1.88-2.37-.83.49-1.75.83-2.72 1.02C18.25 4.38 17 4 15.65 4c-2.35 0-4.26 1.9-4.26 4.26 0 .34.04.67.12.99C7.81 10.15 4.54 8.28 2.3 5.2c-.36.62-.57 1.34-.57 2.08 0 1.48.75 2.79 1.89 3.56-.7-.02-1.35-.22-1.92-.53v.05c0 2.05 1.46 3.76 3.39 4.15-.36.1-.75.15-1.15.15-.28 0-.55-.03-.82-.08.54 1.68 2.11 2.91 3.97 2.95C9.4 18.5 7.43 19 5.3 19c-.35 0-.7-.02-1.04-.06C4.94 20.06 6.96 20.76 9.17 20.76 15.54 20.76 19 15.62 19 11.23c0-.18-.01-.36-.02-.54.83-.6 1.55-1.34 2.12-2.18z"/></svg></a>
+        </div>
+    </section>
+
+    <a href="#" class="chat-btn">
+        <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+        <span class="desktop-only">LET'S CHAT!</span>
+    </a>
+
+    <section class="mission-pledge-wrap">
+        <div class="mission-pledge-container">
+            <div class="mission-box">
+                <h2>OUR MISSION</h2>
+                <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story and let your users know a little more about you.</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+            <div class="pledge-box">
+                <h2>TAKE A PLEDGE!</h2>
+                <button class="support-btn">SUPPORT US</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="news-subscribe-wrap">
+        <div class="news-box">
+            <h2>LATEST NEWS</h2>
+            <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. Just click "Edit Text" or double click me to add your own content and make changes to the font. I'm a great place for you to tell a story about...</p>
+            <a href="#" class="read-more white">READ MORE</a>
+        </div>
+        <div class="subscribe-box">
+            <h2>SUBSCRIBE</h2>
+            <p>Subscribe to Our Newsletter</p>
+            <form>
+                <input type="email" placeholder="Email Address" required>
+                <button type="submit" class="join-btn">JOIN</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="events-section">
+        <h2>OUR EVENTS</h2>
+        <div class="events-grid container">
+            <div class="event-card">
+                <img src="/Meal Packaging And Delivery.png" alt="Meal Packaging And Delivery">
+                <div class="event-content">
+                    <h3>Meal Packaging & Delivery</h3>
+                    <p class="event-date">Tue, Jan 08 - San Francisco</p>
+                    <button class="register-btn">REGISTER NOW</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="/Thanksgiving Soup Kitchen.png" alt="Thanksgiving Soup Kitchen">
+                <div class="event-content">
+                    <h3>Thanksgiving Soup Kitchen</h3>
+                    <p class="event-date">Tue, Feb 08 - San Francisco</p>
+                    <button class="register-btn">REGISTER NOW</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="/Single Parent Cooking Workshop.png" alt="Single Parent Cooking Workshop">
+                <div class="event-content">
+                    <h3>Single Parent Cooking</h3>
+                    <p class="event-date">Tue, Mar 08 - San Francisco</p>
+                    <button class="register-btn">REGISTER NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner" style="background-image: url('/Childern\ playing.png');">
+        <div class="container cta-content">
+            <h3>GIVE TODAY TO HELP END HUNGER</h3>
+            <button class="donate-now-btn">DONATE NOW!</button>
+        </div>
+    </section>
+
+    <section class="latest-news-placeholder">
+        <h2>LATEST NEWS</h2>
+    </section>
+
+    <footer>
+        <div class="footer-container container">
+            <div class="footer-column contact">
+                <h4>CONTACT US</h4>
+                <address>
+                    500 Terry Francine Street, <br>
+                    San Francisco, CA 94158 <br><br>
+                    info@mysite.com <br>
+                    123-456-7890
+                </address>
+            </div>
+            <div class="footer-column connect">
+                <h4>CONNECT WITH US</h4>
+                <div class="social-icons">
+                    <a href="#"><svg viewBox="0 0 24 24"><path d="M19.7 7C19.9 6.55 20 6.07 20 5.56c0-.52-.18-1.03-.49-1.42s-.75-.68-1.25-.8c-.76-.18-1.54-.25-2.33-.25H7.54c-.79 0-1.57.07-2.33.25-.5.12-.91.41-1.25.8C3.82 4.53 3.64 5.04 3.64 5.56c0 .51.2 1.01.37 1.45.02.04.04.08.06.12.04.08.08.16.12.24.23.47.5 1.05.77 1.57.34.66.7 1.35 1.03 2.06.33.71.65 1.46.96 2.24.31.78.61 1.6.87 2.45.26.85.5 1.74.69 2.65.19.91.3 1.84.32 2.75 0 .09.01.19.01.29 0 .55-.45 1-1 1H4.5c-.55 0-1-.45-1-1 0-.1.01-.2.01-.3-.02-.91-.13-1.84-.32-2.75-.19-.91-.43-1.8-.69-2.65-.26-.85-.56-1.66-.87-2.45-.31-.78-.63-1.53-.96-2.24-.33-.71-.69-1.4-.1-2.06-.27-.52-.54-1.1-.77-1.57-.04-.08-.08-.16-.12-.24-.02-.04-.04-.08-.06-.12-.17-.44-.37-.93-.37-1.45s.18-1.01.49-1.42c.34-.4.75-.69 1.25-.8.76-.18 1.54-.25 2.33-.25h9.93c.79 0 1.57.07 2.33.25.5.12.91.41 1.25.8.31.41.49.92.49 1.45 0 .51-.2 1.01-.37 1.45z"/></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4C17.65 2 20 4.35 20 7.8v8.4c0 3.45-2.35 5.8-5.8 5.8H7.8C4.35 22 2 19.65 2 16.2V7.8C2 4.35 4.35 2 7.8 2zm-.2 3.6c-.7 0-1.2.5-1.2 1.2s.5 1.2 1.2 1.2 1.2-.5 1.2-1.2-.5-1.2-1.2-1.2zm8.8 9.4c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5z"/></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24"><path d="M22.46 6.17c-.77.34-1.6.57-2.48.67.88-.53 1.56-1.37 1.88-2.37-.83.49-1.75.83-2.72 1.02C18.25 4.38 17 4 15.65 4c-2.35 0-4.26 1.9-4.26 4.26 0 .34.04.67.12.99C7.81 10.15 4.54 8.28 2.3 5.2c-.36.62-.57 1.34-.57 2.08 0 1.48.75 2.79 1.89 3.56-.7-.02-1.35-.22-1.92-.53v.05c0 2.05 1.46 3.76 3.39 4.15-.36.1-.75.15-1.15.15-.28 0-.55-.03-.82-.08.54 1.68 2.11 2.91 3.97 2.95C9.4 18.5 7.43 19 5.3 19c-.35 0-.7-.02-1.04-.06C4.94 20.06 6.96 20.76 9.17 20.76 15.54 20.76 19 15.62 19 11.23c0-.18-.01-.36-.02-.54.83-.6 1.55-1.34 2.12-2.18z"/></svg></a>
+                    <a href="#"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg></a>
+                </div>
+            </div>
+            <div class="footer-column subscribe">
+                <h4>SUBSCRIBE</h4>
+                <form class="footer-subscribe-form">
+                    <input type="email" placeholder="Email Name*" required>
+                    <button type="submit">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            REGISTERED CHARITY NUMBER: 0123456789
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.querySelector('.menu-toggle-btn');
+            const closeBtn = document.querySelector('#mobile-menu-overlay .close-btn');
+            const overlay = document.getElementById('mobile-menu-overlay');
+            const mobileLinks = document.querySelectorAll('.mobile-nav a');
+
+            const toggleMenu = () => {
+                overlay.classList.toggle('open');
+            };
+
+            menuBtn.addEventListener('click', toggleMenu);
+            closeBtn.addEventListener('click', toggleMenu);
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', toggleMenu);
+            });
+        });
+    </script>
+</body>
+</html>
